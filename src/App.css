@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+.page {
+  height: 100vh;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.landing-page-container {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: #371a1c;
+  overflow-y: scroll;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left-side {
+  height: 100%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
+  /* background-color: black; */
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+.input {
+  /* background-color: aqua; */
+  width: 30%;
+  height: 60px;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  text-shadow: #282D35;
+  padding-left: 10px;
+  background-color: rgba(13, 229, 207, 0.3);
+  color: rgb(114, 244, 9);
+}
+
+.input:focus {
+  border: 1px solid rgb(114, 244, 9);
+  outline: none;
+}
+
+.input::placeholder {
+  color: #282D35;
+}
+
+.button {
+  height: 60px;
+  width: 10%;
+  background-color: rgb(114, 244, 9);
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  color: #282D35;
+  box-sizing: content-box;
+  margin-left: 10px;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  cursor: pointer;
+}
+
+.results-container {
+  /* background-color: yellow; */
+  margin-top: 10px;
+  margin-left: 200px;
+  height: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.row {
+  display: flex;
+  cursor: pointer;
+  width: 44%;
+  height: 30px;
+  margin-top: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  pointer-events: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row > h2 {
+  /* background-color: yellow; */
+  color: rgb(114, 244, 9);
+  pointer-events: auto;
 }
+
+.repo-name {
+  margin-left: 7px;
+}
+
